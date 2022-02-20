@@ -36,7 +36,7 @@
         <ol class="list-decimal ml-5" *ngFor="let option of questionList[currentQuestion]?.options">
           <li class="mt-2" (click)="answer(currentQuestion+1,option)">
             <div appChangeBg [isCorrect]="option.correct"
-              class="bg-white px-3 py-4 border rounded-xl border-slate-300 w-full  cursor-pointer duration-300 ease-in-out  hover:transition-all hover:duration-500 text-lg font-semibold">
+              class="px-3 py-4 border rounded-xl border-slate-300 w-full  cursor-pointer duration-300 ease-in-out  hover:transition-all hover:duration-500 text-lg font-semibold">
               {{option.text}}
             </div>
           </li>
